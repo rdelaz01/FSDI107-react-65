@@ -7,7 +7,6 @@ function App() {
     <>
       <div>
       <Navbar />
-      <h1>Hello from react</h1>
       <Catalog />
       </div>
       <Footer />

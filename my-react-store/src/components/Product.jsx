@@ -1,13 +1,13 @@
 import"./Product.css"
 import QuantityPicker from "./QuantityPicker"
 
-function Product() {
+function Product(props) {
     return(
         <div className="product">
-            <img src="#" alt="Product Image" />
-            <h5>Product Name</h5>
+            <img src={"/images/"+props.data.image} alt="Product Image"></img>
+            <h5>{props.data.title}</h5>
             <div className="prices">
-                <label>Price</label>
+                <label>{props.data.price.toFixed(2)}</label>
                 <label>Total</label>
             </div>
             <QuantityPicker/>
