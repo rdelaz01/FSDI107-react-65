@@ -4,9 +4,18 @@ import "./Footer.css";
 //logic
 function Footer() {
 return (
-    <div>
-        <h2>© 2025 My Online Store. All rights reserved.</h2>
-    </div>
+            <div className="container text-center">
+            <p>&copy; 2026 DaygoFrutas . All Rights Reserved.</p>
+            <p>
+                <a href="#" >Privacy Policy</a> |
+                <a href="#" >Terms of Service</a>
+            </p>
+            <p>Follow us on:
+                <a href="#" >Facebook</a> |
+                <a href="#" >Instagram</a> |
+                <a href="#" >Twitter</a>
+            </p>
+        </div>
     );
 }
 

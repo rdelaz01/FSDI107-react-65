@@ -43,8 +43,13 @@ function Catalog() {
 
     },[]); // the empty array mean this effect runs only once 
     return(
-        <div className="catalog">
-            <h1>Check out our amazing products!</h1>
+        <div className="catalog bg-light min-vh-100">
+            <div className="bg-success text-white py-5 mb-5 shadow-sm text-center">
+        <div className="container py-4">
+        <h1 className="display-4 fw-bold">DaygoFrutas</h1>
+        <p className="lead">The freshest harvest, delivered straight to your door.</p>
+        </div>
+        </div>
             {categories.map(cat => <button key={cat} onClick={() => filter(cat)}>{cat}</button>)}
             <br />
             {productsToDisplay.map(prod => <Product key={prod._id} data={prod} />)}
