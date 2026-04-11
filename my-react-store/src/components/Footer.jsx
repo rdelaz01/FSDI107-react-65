@@ -5,7 +5,7 @@ import "./Footer.css";
 function Footer() {
 return (
             <div className="container text-center">
-            <p>&copy; 2026 DaygoFrutas . All Rights Reserved.</p>
+            <p>&copy; 2024 DaygoFrutas . All Rights Reserved.</p>
             <p>
                 <a href="#" >Privacy Policy</a> |
                 <a href="#" >Terms of Service</a>

@@ -9,10 +9,13 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Admin from './pages/Admin';
 import NotFound from './pages/NotFound';
+import GlobalProvider from './state/globalProvider';
+import Profile from './pages/Profile';
 
 function App() {
   return (
-    <>
+  
+    <GlobalProvider>
       <BrowserRouter>
       <Navbar />
 
@@ -23,14 +26,17 @@ function App() {
         <Route path= '/' element= {<Home />} />
         <Route path= '/contact' element= {<Contact/>} /> 
         <Route path= '/admin' element={<Admin/>} />
+        <Route path= '/profile' element={<Profile />} />
         <Route path= '*' element= {<NotFound/>} />
+
       </Routes>
       
       
       
       <Footer />
       </BrowserRouter>
-    </>
+    </GlobalProvider>
+  
   )
 }
 

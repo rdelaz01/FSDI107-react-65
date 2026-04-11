@@ -33,7 +33,7 @@ function saveProducts() {
             <div className="bg-success text-white py-5 mb-5 shadow-sm text-center">
                 <div className="container py-4">
                     <h1 className="display-4 fw-bold">Store Administrations</h1>
-                    <p className="lead">DaygoFrutas est 2025.</p>
+                    <p className="lead">DaygoFrutas est 2024.</p>
                 </div>
             </div>
 
